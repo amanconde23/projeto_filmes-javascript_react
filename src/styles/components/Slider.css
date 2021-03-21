@@ -38,3 +38,10 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+@media(max-width: 600px){
+  .img-slider {
+    width: 100%;
+    height: 200px;
+  }
+}

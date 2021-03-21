@@ -40,6 +40,24 @@
   transition: background-color 0.5s;
 }
 
+@media(max-width: 600px){
+  .moviesContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .movieCard{
+    margin: 10px auto;
+    background: #676767;
+    width: 74%;
+  }
+  .movieCard img{
+    width: 300px;
+    height: 180px;
+    margin: auto;
+  }
+}
+
 .moviesInfoContainer{
   display: flex;
   flex-direction: column;
@@ -72,4 +90,17 @@
 
 .movieInfoCard p{
   font-style: italic;
+}
+
+@media(max-width: 600px){
+  .movieInfoCard img{
+    width: 300px;
+    margin: 20px 0;
+  }
+  .movieInfoCard{
+    width: 80%;
+  }
+  .movieInfoCard p{
+    text-align: center;
+  }
 }

@@ -35,6 +35,24 @@
   font-size: 14px;
 }
 
+@media(max-width: 600px){
+  .seriesContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .serieCard{
+    margin: 10px auto;
+    background: #676767;
+    width: 74%;
+  }
+  .serieCard img{
+    width: 300px;
+    height: 180px;
+    margin: auto;
+  }
+}
+
 .serieCard .lerSinopseBtn:hover{
   background: #676767;
   transition: background-color 0.5s;
@@ -72,4 +90,17 @@
 
 .serieInfoCard p{
   font-style: italic;
+}
+
+@media(max-width: 600px){
+  .serieInfoCard img{
+    width: 300px;
+    margin: 20px 0;
+  }
+  .serieInfoCard{
+    width: 80%;
+  }
+  .serieInfoCard p{
+    text-align: center;
+  }
 }
