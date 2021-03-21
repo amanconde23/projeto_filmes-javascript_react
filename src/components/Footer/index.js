@@ -7,7 +7,7 @@ class Footer extends Component{
     return(
       <footer>
         <div className={styles.footer}>
-          <p>Desenvolvido por Amanda Martinez</p>
+          <p>Developed by Amanda Martinez</p>
         </div>
       </footer>
     );

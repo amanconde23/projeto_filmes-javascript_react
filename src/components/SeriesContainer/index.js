@@ -51,31 +51,34 @@ class SeriesContainer extends Component{
 
   render(){
     return(
-      <div id="series" className={styles.seriesContainer}>
-        {
-          this.state.series.map((serie) => {
-            return(
-              <div 
-                key={serie.id}
-                className={styles.serieCard}
-              >
-                <h2>
-                  {serie.name}
-                </h2>
-                <img 
-                  src={serie.image}
-                  alt="series cover"
-                />
-                <Link 
-                  to={`/serie/${serie.id}`}
-                  className={styles.lerSinopseBtn}
-                >
-                  Ler Sinopse
-                </Link>
-              </div>
-            );
-          })
-        }
+      <div>
+        <h2 className={styles.titleSeriesContainer}>Series</h2>
+          <div id="series" className={styles.seriesContainer}>
+            {
+              this.state.series.map((serie) => {
+                return(
+                  <div 
+                    key={serie.id}
+                    className={styles.serieCard}
+                  >
+                    <h2>
+                      {serie.name}
+                    </h2>
+                    <img 
+                      src={serie.image}
+                      alt="series cover"
+                    />
+                    <Link 
+                      to={`/serie/${serie.id}`}
+                      className={styles.lerSinopseBtn}
+                    >
+                      Read Synopsis
+                    </Link>
+                  </div>
+                );
+              })
+            }
+          </div>
       </div>
     );
   }

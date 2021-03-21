@@ -51,31 +51,34 @@ class MoviesContainer extends Component{
 
   render(){
     return(
-      <div className={styles.moviesContainer}>
-        {
-          this.state.movies.map((movie) => {
-            return(
-              <div 
-                key={movie.id}
-                className={styles.movieCard}
-              >
-                <h2>
-                  {movie.name}
-                </h2>
-                <img
-                  src={movie.image}
-                  alt="movie cover"
-                />
-                <Link 
-                  to={`/movie/${movie.id}`}
-                  className={styles.lerSinopseBtn}
-                >
-                  Ler Sinopse
-                </Link>
-              </div>
-            );
-          })
-        }
+      <div>
+        <h2 className={styles.titleMoviesContainer}>Movies</h2>
+          <div className={styles.moviesContainer}>
+            {
+              this.state.movies.map((movie) => {
+                return(
+                  <div 
+                    key={movie.id}
+                    className={styles.movieCard}
+                  >
+                    <h2>
+                      {movie.name}
+                    </h2>
+                    <img
+                      src={movie.image}
+                      alt="movie cover"
+                    />
+                    <Link 
+                      to={`/movie/${movie.id}`}
+                      className={styles.lerSinopseBtn}
+                    >
+                      Read Synopsis
+                    </Link>
+                  </div>
+                );
+              })
+            }
+          </div>
       </div>
     );
   }
