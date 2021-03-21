@@ -50,28 +50,43 @@ class Movie extends Component{
     }
   }
 
+  componentDidMount(){
+    const { id } = this.props.match.params;
+    const { name, image, description } = this.state.movies[`${id}`];
+      this.setState = (
+        {
+          movies: {
+            id: {id},
+            name: {name},
+            image: {image},
+            description: {description},
+          }
+        }
+      )
+  }
+
   render(){
     return(
       <div className="container">
         <h1 className={styles.moviesInfoTitle}>Movies Synopsis</h1>
-        <div className={styles.moviesInfoContainer}>
-          {this.state.movies.map((item) => {
-              return(
-                <div
-                  key={item.id} 
-                  className={styles.movieInfoCard}
-                >
-                  <h2>{item.name}</h2>
-                  <img src={item.image} alt="movie cover" />
-                  <p>
-                    {item.description}
-                  </p>
-                </div>
-              )
-            })
-          }
-          <Footer />
-        </div>
+          <div className={styles.moviesInfoContainer}>
+            {this.state.movies.map((item) => {
+                return(
+                  <div
+                    key={item.id} 
+                    className={styles.movieInfoCard}
+                  >
+                    <h2>{item.name}</h2>
+                    <img src={item.image} alt="movie cover" />
+                    <p>
+                      {item.description}
+                    </p>
+                  </div>
+                )
+              })
+            }
+            <Footer />
+          </div>
       </div>
     );
   }

@@ -39,6 +39,17 @@
   color: #fff;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.serieCard .lerSinopseBtn:hover{
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.serieCard .lerSinopseBtn:hover{
+  background: #676767;
+  transition: background-color 0.5s;
 }
 
 @media(max-width: 600px){
@@ -59,11 +70,6 @@
   }
 }
 
-.serieCard .lerSinopseBtn:hover{
-  background: #676767;
-  transition: background-color 0.5s;
-}
-
 .seriesInfoContainer{
   display: flex;
   flex-direction: column;
@@ -71,9 +77,9 @@
 
 .seriesInfoTitle{
   text-align: center;
-  text-shadow: 2px 2px #fff;
+  text-shadow: 2px 2px #ffffff9e;
   font-size: 36px;
-  padding: 16px 0;
+  padding: 16px 0 8px 0;
 }
 
 .serieInfoCard{
@@ -94,13 +100,18 @@
   margin: 20px 0;
 }
 
+.serieInfoCard img:hover{
+  width: 520px;
+  transition: all 0.3s;
+}
+
 .serieInfoCard p{
   font-style: italic;
 }
 
 @media(max-width: 600px){
   .serieInfoCard img{
-    width: 300px;
+    width: 280px;
     margin: 20px 0;
   }
   .serieInfoCard{
@@ -108,5 +119,9 @@
   }
   .serieInfoCard p{
     text-align: center;
+  }
+  .serieInfoCard img:hover{
+    width: 290px;
+    transition: all 0.3s;
   }
 }
