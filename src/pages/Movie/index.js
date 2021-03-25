@@ -67,7 +67,7 @@ class Movie extends Component{
 
   render(){
     return(
-      <div className="container">
+      <div>
         <h1 className={styles.moviesInfoTitle}>Movies Synopsis</h1>
           <div className={styles.moviesInfoContainer}>
             {this.state.movies.map((item) => {
@@ -85,7 +85,9 @@ class Movie extends Component{
                 )
               })
             }
-            <Footer />
+            <div className={styles.footer}>
+              <Footer />
+            </div>
           </div>
       </div>
     );

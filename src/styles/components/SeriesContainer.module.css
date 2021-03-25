@@ -1,6 +1,9 @@
 .seriesContainer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
 }
 
@@ -52,7 +55,7 @@
   transition: background-color 0.5s;
 }
 
-@media(max-width: 600px){
+@media(max-width: 888px){
   .seriesContainer{
     display: flex;
     flex-direction: column;
@@ -109,19 +112,19 @@
   font-style: italic;
 }
 
-@media(max-width: 600px){
+@media(max-width: 888px){
   .serieInfoCard img{
-    width: 280px;
+    width: 250px;
     margin: 20px 0;
   }
   .serieInfoCard{
-    width: 80%;
+    width: 88%;
   }
   .serieInfoCard p{
     text-align: center;
   }
   .serieInfoCard img:hover{
-    width: 290px;
+    width: 260px;
     transition: all 0.3s;
   }
 }

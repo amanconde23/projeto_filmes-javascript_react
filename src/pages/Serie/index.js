@@ -51,7 +51,7 @@ class SerieContainer extends Component{
 
   render(){
     return(
-      <div className="container">
+      <div>
         <h1 className={styles.seriesInfoTitle}>Series Synopsis</h1>
         <div className={styles.seriesInfoContainer}>
           {this.state.series.map((item) => {
@@ -69,7 +69,9 @@ class SerieContainer extends Component{
               )
             })
           }
-          <Footer />
+          <div className={styles.footer}>
+            <Footer />
+          </div>
         </div>
       </div>
     );

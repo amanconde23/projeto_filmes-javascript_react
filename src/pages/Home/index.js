@@ -11,13 +11,13 @@ import '../../styles/global.css'
 class Home extends Component{
   render(){
     return(
-      <div>
-        <div className={styles.container}>
+      <div className={styles.container}>
           <Slider />
           <MoviesContainer />
           <SeriesContainer />
+        <div className={styles.footer}>
+          <Footer />
         </div>
-        <Footer />
       </div>
     );
   }

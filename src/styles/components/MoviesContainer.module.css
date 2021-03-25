@@ -1,6 +1,9 @@
 .moviesContainer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
 }
 
@@ -8,7 +11,7 @@
   font-size: 30px;
   text-shadow: 2px 2px #fff;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 24px;
 }
 
 .movieCard{
@@ -53,7 +56,7 @@
   transition: background-color 0.5s;
 }
 
-@media(max-width: 600px){
+@media(max-width: 888px){
   .moviesContainer{
     display: flex;
     flex-direction: column;
@@ -110,19 +113,19 @@
   font-style: italic;
 }
 
-@media(max-width: 600px){
+@media(max-width: 888px){
   .movieInfoCard img{
-    width: 280px;
+    width: 250px;
     margin: 20px 0;
   }
   .movieInfoCard{
-    width: 80%;
+    width: 88%;
   }
   .movieInfoCard p{
     text-align: center;
   }
   .movieInfoCard img:hover{
-    width: 290px;
+    width: 260px;
     transition: all 0.3s;
   }
 }
